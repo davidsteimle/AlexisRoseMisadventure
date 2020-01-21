@@ -145,7 +145,7 @@ $Four = @(
 "sex dungeon",
 "pleasure barge",
 "birthday yacht",
-"comaine palace",
+"cocaine palace",
 "meth lab",
 "desert stronghold",
 "mountain lair",
