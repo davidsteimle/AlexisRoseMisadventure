@@ -39,12 +39,23 @@
 #> 
 Param(
     [switch]$Respond # Executes function and prints result to screen.
+    ,
+    [switch]$JustJared # Only include Jared Leto related items.
 )
 
 function Get-MisadventureText{
-    $Choice1 = $One | Get-Random
+    if($JustJared){
+        $Choice1 = $One.ForEach({ if($PSItem -match "Jared"){ $PSItem } })
+    } else {
+        $Choice1 = $One | Get-Random
+    }
     $Choice2 = $Two | Get-Random
-    $Choice3 = $Three | Get-Random
+    if($JustJared){
+        $Jareds = $Three.ForEach({ if($PSItem -match "Jared"){ $PSItem } })
+        $Choice3 = $Jareds | Get-Random
+    } else {
+        $Choice3 = $Three | Get-Random
+    }
     if($Choice3 -match "Jared Leto" -and $Choice2 -match "Jared Leto's secret funeral"){
         $Choice3 = "the replacement Jared Leto"
     }
