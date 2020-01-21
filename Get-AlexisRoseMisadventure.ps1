@@ -99,17 +99,17 @@ $One = @(
 )
 
 $Two = @(
-"FLIRT",
-"GAMBLE",
-"SEWER CRAWL",
-"DANCE BATTLE",
-"GRIFT",
-"BACKFLIP",
-"NEGOTIATE, IN CANTONESE, DAVID,",
-"SCUBA DIVE",
-"FAKE SEIZURE",
-"BARTER",
-"ARGENTINE TANGO"
+"flirt",
+"gamble",
+"sewer crawl",
+"dance battle",
+"grift",
+"backflip",
+"negotiate, IN CANTONESE, DAVID,",
+"scuba dive",
+"fake seizure",
+"barter",
+"Argentine tango"
 )
 
 $Three = @(
@@ -142,18 +142,18 @@ $Three = @(
 )
 
 $Four = @(
-"SEX DUNGEON",
-"PLEASURE BARGE",
-"BIRTHDAY YACHT",
-"COCAINE PALACE",
-"METH LAB",
-"DESERT STRONGHOLD",
-"MOUNTAIN LAIR",
-"SECRET DIAMOND MINE",
-"SEX CULT",
-"BASEMENT",
-"SUBMARINE",
-"CAR BOOT"
+"sex dungeon",
+"pleasure barge",
+"birthday yacht",
+"comaine palace",
+"meth lab",
+"desert stronghold",
+"mountain lair",
+"secret diamond mine",
+"sex cult",
+"basement",
+"submarine",
+"car boot"
 )
 
 $Five = @(
