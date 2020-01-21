@@ -39,23 +39,12 @@
 #> 
 Param(
     [switch]$Respond # Executes function and prints result to screen.
-    ,
-    [switch]$JustJared # Only include Jared Leto related items.
 )
 
 function Get-MisadventureText{
-    if($JustJared){
-        $Choice1 = $One.ForEach({ if($PSItem -match "Jared"){ $PSItem } })
-    } else {
-        $Choice1 = $One | Get-Random
-    }
+    $Choice1 = $One | Get-Random
     $Choice2 = $Two | Get-Random
-    if($JustJared){
-        $Jareds = $Three.ForEach({ if($PSItem -match "Jared"){ $PSItem } })
-        $Choice3 = $Jareds | Get-Random
-    } else {
-        $Choice3 = $Three | Get-Random
-    }
+    $Choice3 = $Three | Get-Random
     if($Choice3 -match "Jared Leto" -and $Choice2 -match "Jared Leto's secret funeral"){
         $Choice3 = "the replacement Jared Leto"
     }
@@ -192,7 +181,7 @@ $Five = @(
 "a limited knowledge of offensive Thai massage",
 "the timer nearly at zero",
 "the one guard who liked you nowhere to be found",
-"four visas, none of which feature your real name,",
+"four visas, none of which feature your real name",
 "four million Kuwaiti dinar sewn into your belly dancing costume"
 )
 
