@@ -37,7 +37,9 @@
  Scripted, less data mining, version of https://twitter.com/charles_jensen/status/1219631069491867648?s=21
 
 #> 
-Param()
+Param(
+    [switch]$Respond # Executes function and prints result to screen.
+)
 
 function Get-MisadventureText{
     $Choice1 = $One | Get-Random
@@ -182,3 +184,8 @@ $Five = @(
 "four visas, none of which feature your real name,",
 "four million Kuwaiti dinar sewn into your belly dancing costume"
 )
+
+if($Respond){
+    Get-MisadventureText
+}
+
