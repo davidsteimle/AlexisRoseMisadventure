@@ -61,7 +61,8 @@ function Get-MisadventureText{
     $Response = "$Response only "
     }
     $Response = "$Response $Choice5A and $Choice5B, David. Ugh!"
-    $Response = $Response -replace "  "," "
+    $Response = $Response -Replace "  "," "
+    $Response = $Response -Replace "being waking","waking"
     $Response
 }
 
